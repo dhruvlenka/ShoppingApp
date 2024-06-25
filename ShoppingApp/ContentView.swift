@@ -10,7 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Dhruv")
+            Image("batman")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(15)
+                .frame(width: 300, height: 300 )
+                .padding(15)
+                
+            Text("Bruce Wayne")
         }
         .padding()
     }
